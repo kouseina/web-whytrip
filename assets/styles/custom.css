@@ -1,0 +1,153 @@
+body {
+    background-color: #fff;
+    font-family: 'Mulish', sans-serif;
+    color: #666666;
+}
+
+nav ul li a{
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*Navbar*/
+
+.btn-register {
+background: transparent;
+width: 148px;
+height: 48px;
+/* -webkit-transition: 0.4s ease;
+transition: 0.4s ease; */
+}
+
+.btn-register:hover {
+background-color: #FF9737;
+color: #ffffff;
+
+}
+
+.btn-login {
+background-color: #FF9737;
+color: #fff;
+width: 148px;
+height: 48px;
+}
+
+.btn-login:hover {
+background-color: #FF9737;
+color: #ffffff;
+}
+
+.main-title {
+    margin-top: 4em !important;
+}
+
+.main-title h2{
+    color: #333333;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.main-nav{
+    margin-left: -1.5em !important;
+}
+
+.button-nav{
+    margin-top: 0.5em !important;
+}
+
+.button-nav button{
+    height: 45px;
+    border-radius: 30px;
+    color: #555555;
+    border: 1px solid #dedede;
+    font-weight: 400;
+    font-size: 13px;
+    margin: 0 0.25em;
+}
+
+.button-nav button:hover{
+    background-color: #FF9737;
+    color: #ffffff;
+    border-style: none;
+}
+
+
+.section-stats {
+    margin-top: -14em;
+    background-color: #fff;
+    margin-left: 15em !important;
+    margin-right: 2em !important;
+    border-radius: 8px !important;
+    height: 100px;
+}
+    
+.section-popular-heading p {
+    font-size: 18px;
+    color: #333333;
+}
+    
+.section-popular-content .section-popular-travel .card-travel {
+    color: #fff;
+    padding: 30px;
+    background-size: cover;
+    margin-bottom: 20px;
+    border-radius: 8px !important;
+}
+
+.travel-content h3{
+    font-size: 30px;
+}
+    
+.travel-content p{
+    font-size: 18px;
+}
+
+.travel-content span{
+    color: #777777;
+}    
+    
+.travel-text, .travel-content{
+    margin-top: 20em !important;
+}
+      
+.travel-text p{
+    color: #dddddd;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* footer */
+.section-footer {
+margin-top: -3em !important;
+margin-left: -7em !important;
+color: #333333;
+}
+
+.section-footer .row-list {
+    margin-top: 120px !important;
+}
+
+.section-footer h5 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.section-footer ul li.jalan{
+    color: #777777;
+}
+
+.section-footer li {
+    margin-bottom: 10px;
+}
+
+.section-footer a {
+    color: #333333;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.section-footer .copyright {
+    font-size: 16px;
+    font-weight: normal;
+}
+  
