@@ -20,6 +20,12 @@ height: 48px;
 transition: 0.4s ease; */
 }
 
+.btn-image img{
+    width: 20px !important;
+    float: right;
+    margin-top: -2.75em !important;
+}
+
 .btn-register:hover {
 background-color: #FF9737;
 color: #ffffff;
@@ -86,7 +92,8 @@ color: #ffffff;
     font-size: 18px;
     color: #333333;
 }
-    
+
+
 .section-popular-content .section-popular-travel .card-travel {
     color: #fff;
     padding: 30px;
@@ -105,16 +112,28 @@ color: #ffffff;
 
 .travel-content span{
     color: #777777;
-}    
+}
+
+.travel-content img{
+    width: 24px !important;
+    height: 24px !important;
+}
     
 .travel-text, .travel-content{
-    margin-top: 20em !important;
+    margin-top: 18em !important;
 }
-      
+    
 .travel-text p{
     color: #dddddd;
     font-size: 16px;
     font-weight: 600;
+}
+
+li.page-item a{
+    width: 56px !important;
+    height: 56px !important;
+    color: #333333;
+    padding-top: 1em !important;
 }
 /* footer */
 .section-footer {
@@ -150,4 +169,30 @@ color: #333333;
     font-size: 16px;
     font-weight: normal;
 }
-  
+
+@media only screen and (max-width: 768px){    
+    .btn-register {
+        margin-left: 0 !important;
+        margin-right: 1em !important;
+        color: #333333
+    }
+    
+    .btn-register:hover {
+        background-color: #333333;
+        color: #ffffff;
+    }
+
+    .button-search {
+        margin-left: -0.5em !important;
+    }
+
+    .section-popular-content .section-popular-travel .card-travel {
+        margin-left: 0 !important;
+        margin-bottom: 1em !important;
+      }
+
+    .section-footer .row-list{
+        margin-top: 2em !important;
+        margin-left: 7em !important;
+    }
+}

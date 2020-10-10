@@ -29,10 +29,10 @@
             data-toggle="collapse"
             data-target="#navb"
             >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon hamburger"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-around ml-5" id="navb">
+        <div class="collapse navbar-collapse justify-content-around" id="navb">
             <ul class="navbar-nav ">
                 <li class="nav-item mx-md-2">
                     <a href="index.html" class="nav-link active">Home</a>
@@ -55,18 +55,19 @@
                   Login
               </button>
             </form>
-
-            <!--Dekstop Button-->
-
-            <form class="form-inline my-2 my-lg-0 d-none d-md-block">
-                <button class="btn btn-register my-2 my-sm-0 px-4">
-                    Register
-                </button>
-                <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
-                    Login
-                </button>
-            </form> 
         </div>
+
+        <!--Dekstop Button-->
+
+        <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+            <button class="btn btn-register my-2 my-sm-0 px-4 mr-3">
+                Register
+            </button>
+            <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
+                Login
+            </button>
+        </form> 
+
         </nav>
     </div>
 
@@ -77,11 +78,13 @@
             <br>
             Dengan Mudah
         </h1>
-        <p class="mt-4">
-          Temukan berbagai tempat wisata yang berkualitas dengan informasi 
-          <br>
-          yang lengkap supaya kamu bisa menikmati liburanmu
-        </p>
+        <div class="d-flex justify-content-center desc">
+            <p class="mt-4">
+                Temukan berbagai tempat wisata yang berkualitas dengan informasi 
+                yang lengkap supaya kamu bisa menikmati liburanmu
+            </p>
+        </div>
+        
     </header>
 
     <!--Content-->
@@ -91,14 +94,14 @@
             <section class="section-stats row 
             justify-content-center col-md-7 ml-5 mb-5" id="stats">
                 <div class="input-group">
-                  <select class="dropdown-toggle col-md-4" id="inputGroupSelect04" aria-label="Example select with button addon">
+                  <select class="dropdown-toggle jenis-wisata col-sm col-md-4" id="inputGroupSelect04" aria-label="Example select with button addon">
                     <option selected>Jenis Wisata</option>
                     <option value="Wisata Alam">Wisata Alam</option>
                     <option value="Wisata Pantai">Wisata Pantai</option>
                     <option value="Wisata Religi">Wisata Religi</option>
                     <option value="Wisata Kuliner">Wisata Kuliner</option>
                   </select>
-                  <select class="dropdown-toggle col-md-4" id="inputGroupSelect04" aria-label="Example select with button addon">
+                  <select class="dropdown-toggle lokasi-wisata col-md-4" id="inputGroupSelect04" aria-label="Example select with button addon">
                     <option selected>Lokasi Wisata</option>
                     <option value="Bali">Bali</option>
                     <option value="Jawa Tengah">Jawa Tengah</option>
@@ -106,8 +109,8 @@
                     <option value="Jawa Barat">Jawa Barat</option>
                   </select>
                   
-                  <div class="input-group-append col-md-4 my-3">
-                    <button class="btn btn-cari" type="button">Cari Tempat</button>
+                  <div class="input-group-append col-sm-12 col-md-4 my-3 col-sm-auto">
+                    <button class="btn btn-cari " type="button">Cari Tempat</button>
                   </div>
                 </div>            
             </section>
@@ -118,10 +121,10 @@
           <div class="brand mt-5">
             <h2 class="mb-4">Agen wisata kami</h2>
             <div class="brand-image d-flex justify-content-around mb-5">
-                <img src="assets/img/agen-google.png" alt="">
-                <img src="assets/img/agen-airbnb.png" alt="">
-                <img src="assets/img/agen-traveloka.png" alt="">
-                <img src="assets/img/agen-tiket.png" alt="">
+                <div class="item-brands"><img src="assets/img/agen-google.png" alt=""></div>
+                <div class="item-brands"><img src="assets/img/agen-airbnb.png" alt=""></div>
+                <div class="item-brands"><img src="assets/img/agen-traveloka.png" alt=""></div>
+                <div class="item-brands"><img src="assets/img/agen-tiket.png" alt=""></div>
             </div>
           </div>
         </div>
@@ -142,57 +145,72 @@
         <section class="section-popular-content " id="popular-content">
             <div class="container">
                 <div class="section-popular-travel row justify-content-center mt-4 owl-carousel owl-theme">
-                    <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="items">
                         <div class="card-travel d-flex flex-column"
                         style="background-image: url('assets/img/1.png');">
                             <div class="travel-content">
                                 <h3>Uluwatu Tempe</h3>
                                 <p>Badung, Bali</p>
-                                <img src="assets/img/star.png" alt=""> 4.9 <span>(92 Review)</span>
+                                <div class="rating d-flex flex-row">
+                                    <img src="assets/img/star.png" alt=""> 
+                                    <p>4.9 <span>(92 Review)</span> </p>
+                                </div>  
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="items">
                         <div class="card-travel d-flex flex-column"
                         style="background-image: url('assets/img/2.png');">
                             <div class="travel-content">
                                 <h3>Tanah Lot</h3>
                                 <p>Tabanan, Bali</p>
-                                <img src="assets/img/star.png" alt=""> 4.9 <span>(64 Review)</span>
+                                <div class="rating d-flex flex-row">
+                                    <img src="assets/img/star.png" alt=""> 
+                                    <p>4.9 <span>(64 Review)</span> </p>
+                                </div> 
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="items">
                         <div class="card-travel d-flex flex-column"
                         style="background-image: url('assets/img/3.png');">
                             <div class="travel-content">
                                 <h3>Candi Borobudur</h3>
                                 <p>Magelang, Jawa Tengah</p>
-                                <img src="assets/img/star.png" alt=""> 4.8 <span>(46 Review)</span>
+                                <div class="rating d-flex flex-row">
+                                    <img src="assets/img/star.png" alt=""> 
+                                    <p>4.8 <span>(46 Review)</span> </p>
+                                </div>  
                             </div> 
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="items">
                         <div class="card-travel d-flex flex-column"
                         style="background-image: url('assets/img/1.png');">
                             <div class="travel-content">
                                 <h3>Uluwatu Tempe</h3>
                                 <p>Badung, Bali</p>
-                                <img src="assets/img/star.png" alt=""> 4.9 <span>(92 Review)</span>
+                                <div class="rating d-flex flex-row">
+                                    <img src="assets/img/star.png" alt=""> 
+                                    <p>4.9 <span>(92 Review)</span> </p>
+                                </div>  
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="items">
                         <div class="card-travel d-flex flex-column"
                         style="background-image: url('assets/img/2.png');">
                             <div class="travel-content">
                                 <h3>Tanah Lot</h3>
                                 <p>Tabanan, Bali</p>
-                                <img src="assets/img/star.png" alt=""> 4.9 <span>(64 Review)</span>
+                                <div class="rating d-flex flex-row">
+                                    <img src="assets/img/star.png" alt=""> 
+                                    <p>4.9 <span>(64 Review)</span> </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -210,7 +228,7 @@
         </section>
 
         <!--Section List-->
-        <section class="section-popular mt-5" id="popular">
+        <section class="section-popular mt-5" id="list">
             <div class="container">
                 <div class="row mt-5">
                     <div class="col section-popular-heading">
@@ -223,8 +241,8 @@
 
         <section class="section-popular-content" id="list-content">
             <div class="container">
-                <div class="section-popular-travel row justify-content-center mt-4">
-                    <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="section-popular-travel row justify-content-center mt-4 owl-carousel owl-theme">
+                    <div class="items">
                         <div class="card-travel text-center d-flex flex-column"
                         style="background-image: url('assets/img/1.png');">
                             <div class="travel-text text-center">
@@ -234,7 +252,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="items">
                         <div class="card-travel text-center d-flex flex-column"
                         style="background-image: url('assets/img/2.png');">
                             <div class="travel-text text-center">
@@ -244,7 +262,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="items">
                         <div class="card-travel text-center d-flex flex-column"
                         style="background-image: url('assets/img/3.png');">
                             <div class="travel-text text-center">
@@ -253,11 +271,31 @@
                             </div>  
                         </div>
                     </div>
+
+                    <div class="items">
+                        <div class="card-travel text-center d-flex flex-column"
+                        style="background-image: url('assets/img/1.png');">
+                            <div class="travel-text text-center">
+                                <h3>Bali</h3>
+                                <p>100+ Tempat Wisata</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="card-travel text-center d-flex flex-column"
+                        style="background-image: url('assets/img/2.png');">
+                            <div class="travel-text text-center">
+                                <h3>Papua</h3>
+                                <p>100+ Tempat Wisata</p>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
-            <div class="input-group-append col-md-12 my-4 justify-content-center">
-                <a href="list.html">
+            <div class="input-group-append col-md-12 my-4 mb-5 justify-content-center">
+                <a href="list-daerah.html">
                     <button class="btn btn-detail" type="button">Lihat Semua</button>
                 </a>
               </div>
@@ -265,32 +303,31 @@
         </section>
 
         <!--Section Testimoni-->
-         <section class="section-testimonial-heading mt-5" id="testimonialHeading">
+         <section class="section-testimonial-heading" id="testimonialHeading">
              <div class="container">
-                 <div class="row mt-5">
+                 <div class="row">
                      <div class="col">
-                        <h2 class="mt-2 mb-2 title">Testimoni</h2>
+                        <h2>Testimoni</h2>
                      </div>
                  </div>
              </div>
          </section>
 
-         <section class="section-testimonial-content mt-4" id="testimonial-content">
+         <section class="section-testimonial-content mt-3 ml-4" id="testimonial-content">
              <div class="container">
-                 <div class="section-popular-travel row" id="testi-card">
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="card card-testimonial ">
-                            <div class="content mt-4 ml-3">
+                 <div class="section-popular-travel testi row slider owl-carousel owl-theme justify-content-between" id="testi-card">
+                    <div class="items">
+                        <div class="card card-testimonial">
+                            <div class="content mt-4 ml-4 mr-4">
                                 <p class="testimonial">
-                                    “Wah web ini sangat membantu saya untuk mencari tempat wisata yang tepat dengan budget saya, <br>
-                                    sangat merekomendasikan website ini kepada <br>
-                                    orang yang sedang ingin mecari tempat wisata
+                                    “Wah web ini sangat membantu saya untuk mencari tempat wisata yang tepat dengan budget saya,
+                                    sangat merekomendasikan website ini kepada orang yang sedang ingin mecari tempat wisata"
                                 </p>
-                                <div class="person mt-4">
+                                <div class="person mt-4 mb-4">
                                     <div class="testimonial-pict">
                                         <img src="assets/img/review.png" alt="User">
                                     </div>
-                                    <div class="testimonial-content ml-2 mt-1">
+                                    <div class="testimonial-content ml-2">
                                          <p class="name">Ronald Richards</p>
                                          <p class="job">Doctor</p>
                                     </div>
@@ -299,19 +336,18 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="items">
                         <div class="card card-testimonial">
-                            <div class="content mt-4 ml-3">
+                            <div class="content mt-4 ml-4 mr-4">
                                 <p class="testimonial">
-                                    “Wah web ini sangat membantu saya untuk mencari tempat wisata yang tepat dengan budget saya, <br>
-                                    sangat merekomendasikan website ini kepada <br>
-                                    orang yang sedang ingin mecari tempat wisata
+                                    “Wah web ini sangat membantu saya untuk mencari tempat wisata yang tepat dengan budget saya,
+                                    sangat merekomendasikan website ini kepada orang yang sedang ingin mecari tempat wisata"
                                 </p>
-                                <div class="person mt-4">
+                                <div class="person mt-4 mb-4">
                                     <div class="testimonial-pict">
                                         <img src="assets/img/review-2.png" alt="User">
                                     </div>
-                                    <div class="testimonial-content ml-2 mt-1">
+                                    <div class="testimonial-content ml-2">
                                          <p class="name">Kathryn Murphy</p>
                                          <p class="job">Doctor</p>
                                     </div>
@@ -320,19 +356,38 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="card card-testimonial ">
-                            <div class="content mt-4 ml-3">
+                    <div class="items">
+                        <div class="card card-testimonial">
+                            <div class="content mt-4 ml-4 mr-4">
                                 <p class="testimonial">
-                                    “Wah web ini sangat membantu saya untuk mencari tempat wisata yang tepat dengan budget saya, <br>
-                                    sangat merekomendasikan website ini kepada <br>
-                                    orang yang sedang ingin mecari tempat wisata
+                                    “Wah web ini sangat membantu saya untuk mencari tempat wisata yang tepat dengan budget saya,
+                                    sangat merekomendasikan website ini kepada orang yang sedang ingin mecari tempat wisata"
                                 </p>
-                                <div class="person mt-4">
+                                <div class="person mt-4 mb-4">
+                                    <div class="testimonial-pict">
+                                        <img src="assets/img/review-3.png" alt="User">
+                                    </div>
+                                    <div class="testimonial-content ml-2">
+                                         <p class="name">Jerome Bell</p>
+                                         <p class="job">Doctor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="card card-testimonial">
+                            <div class="content mt-4 ml-4 mr-4">
+                                <p class="testimonial">
+                                    “Wah web ini sangat membantu saya untuk mencari tempat wisata yang tepat dengan budget saya,
+                                    sangat merekomendasikan website ini kepada orang yang sedang ingin mecari tempat wisata"
+                                </p>
+                                <div class="person mt-4 mb-4">
                                     <div class="testimonial-pict">
                                         <img src="assets/img/review.png" alt="User">
                                     </div>
-                                    <div class="testimonial-content ml-2 mt-1">
+                                    <div class="testimonial-content ml-2">
                                          <p class="name">Ronald Richards</p>
                                          <p class="job">Doctor</p>
                                     </div>
@@ -341,19 +396,18 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="items">
                         <div class="card card-testimonial">
-                            <div class="content mt-4 ml-3">
+                            <div class="content mt-4 ml-4 mr-4">
                                 <p class="testimonial">
-                                    “Wah web ini sangat membantu saya untuk mencari tempat wisata yang tepat dengan budget saya, <br>
-                                    sangat merekomendasikan website ini kepada <br>
-                                    orang yang sedang ingin mecari tempat wisata
+                                    “Wah web ini sangat membantu saya untuk mencari tempat wisata yang tepat dengan budget saya,
+                                    sangat merekomendasikan website ini kepada orang yang sedang ingin mecari tempat wisata"
                                 </p>
-                                <div class="person mt-4">
+                                <div class="person mt-4 mb-4">
                                     <div class="testimonial-pict">
                                         <img src="assets/img/review-2.png" alt="User">
                                     </div>
-                                    <div class="testimonial-content ml-2 mt-1">
+                                    <div class="testimonial-content ml-2">
                                          <p class="name">Kathryn Murphy</p>
                                          <p class="job">Doctor</p>
                                     </div>
@@ -361,7 +415,6 @@
                             </div>
                         </div>
                     </div>
-                    
                  </div>
              </div>
          </section>
@@ -380,12 +433,11 @@
                                 <br>
                                 Purwokerto Selatan, Banyumas</li>
                               <li >
-                                  <ul class="list-unstyled mt-3">
+                                  <ul class="list-unstyled sosmed mt-3">
                                       <a href="https://www.facebook.com/" class="mr-3"><img src="assets/img/fb.png"></a>
                                       <a href="https://twitter.com/" class="mr-3"><img src="assets/img/tw.png"></a>
                                       <a href="https://www.linkedin.com/" class="mr-3"><img src="assets/img/in.png"></a>
                                   </ul>
-                                  
                               </li>
                           </ul>
                       </div>
@@ -415,7 +467,7 @@
                       </div>
                   </div>
               </div>
-              <section class="copyright mt-5 mb-5">&#x24B8; Copyright 2020 whytrip</section>
+              <section class="copyright mt-5 mb-5 text-center">&#x24B8; Copyright 2020 whytrip</section>
           </div>
       </div>
   </footer>
@@ -427,3 +479,4 @@
   <script src="assets/script/main.js"></script>
 </body>
 </html>
+
