@@ -18,6 +18,11 @@ button{
   font-weight: 700;
 }
 
+button a, button a:hover, button a:focus{
+  color: #ffffff;
+  text-decoration: none;
+}
+
 h2{
   color: #858A8F;
   font-weight: 600;
@@ -85,13 +90,21 @@ h3{
   color: #ffffff;
 }
 
-header {
+header{
   padding: 180px 0px 165px;
   margin-top: -90px;
-  background-image: url('../img/header.png');
   background-size: cover;
-  height: 105vh;
   color: #fff;
+}
+
+header.index {
+  background-image: url('../img/header.png');
+  height: 105vh;
+}
+
+header.about-us{
+  background-image: url('../img/header-about.png');
+  height: 85vh;
 }
 
 
@@ -99,7 +112,6 @@ header h1{
   font-size: 64px;
   font-weight: 800;
 }
-
 
 header p {
   font-size: 18px;
@@ -113,7 +125,6 @@ header p {
   display: flex;
   flex-direction: row;
 }
-
 
 .section-stats {
   margin-top: -15em;
@@ -290,8 +301,8 @@ color: #333333;
 }
 
 .section-footer h5 {
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 16px;
   margin-bottom: 20px;
 }
 .section-footer ul li.jalan{
@@ -313,7 +324,52 @@ color: #333333;
   font-weight: normal;
 }
 
+/* About us page */
+.agen-content-cards{
+  display: flex;
+  flex-direction: row;
+}
+
+.card-agen{
+  margin-left: -1em !important;
+  border: none !important;
+}
+
+.card-body{
+  margin-top: -.75em !important;
+}
+
+.card-title{
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  padding: 0 !important;
+}
+
+.card-text {
+  margin-bottom: 0.75em !important;
+}
+
+.card-text{
+  font-size: 18px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.card-text.email{
+  font-weight: 600 !important;
+  color: #777777;
+}
+
+.about-footer{
+  margin-top: -5em !important;
+}
+
 @media only screen and (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+
   .navbar-light{
     margin-top: 0 !important;
   }
@@ -383,11 +439,16 @@ color: #333333;
   }
 
   header{
-    background-position: center !important;    
-    height: 140vh !important;
+    background-position: center !important;
+    width: 100% !important;
   }
 
-  header h1{
+  header.index{
+    height: 110vh !important;
+  }
+
+  header.index h1{
+    margin-top: -1em !important;
     font-size: 32px;
   }
 
@@ -398,7 +459,7 @@ color: #333333;
   }
 
   .section-stats {
-    margin-top: -15em !important;
+    margin-top: -17em !important;
     margin-left: 0 !important;
     height: 150px !important;
   }
@@ -407,11 +468,21 @@ color: #333333;
     margin-top: 0.5 !important;
     margin-bottom: 1em !important;
     height: 58px !important;
+    border: none !important;
+    background: transparent;
   }
 
   .btn-cari{
-    width: 22.5em !important;
+    /* width: 21.5em !important; */
+    width: 60vh;
     margin-left: -1.75em !important;
+    margin-right: -5em !important;
+    height: 58px !important;
+  }
+
+  .btn-detail{
+    width: 21.5em !important;
+    margin-left: -5.5em !important;
     margin-right: -5em !important;
     height: 58px !important;
   }
@@ -422,6 +493,10 @@ color: #333333;
 
   .brand h2{
     text-align: center;
+    margin-top: 11em !important;
+    margin-left: -12em;
+    font-weight: 600;
+    font-size: 16px;
   }
 
   .section-popular-heading{
@@ -430,12 +505,14 @@ color: #333333;
 
   .section-popular-heading h2{
     margin-top: 0 !important;
+    margin-left: .25em;
     font-size: 20px;
   }
 
   .section-popular-heading p {
     letter-spacing: 0.5px !important;
     width: 75% !important;
+    margin-left: .5em;
     font-size: 14px;
   }
 
@@ -445,19 +522,19 @@ color: #333333;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 2em !important;
+    margin-left: .5em !important;
   }
-
   .item-brands{
+    margin-top: -1.5em;
     flex: 50%;
     display: flex;
     flex-direction: row;
   }
 
   .brand-image img{
-    width: auto;
+    height: 20px;
     margin-top: 1em !important;
-    margin-bottom: 1em !important;
+    margin-bottom: 1.5em !important;
   }
   
   .owl-nav{
@@ -478,8 +555,14 @@ color: #333333;
   }
   
   .section-popular-content .section-popular-travel .card-travel {
-    margin-left: 0.75em !important;
+    margin-left: 1em !important;
     margin-bottom: 0 !important;
+  }
+
+  .card-travel{
+    width: auto;
+    margin-left: 1em;
+    justify-content: center !important;
   }
 
   .section-footer .row-list{
@@ -493,5 +576,52 @@ color: #333333;
 
   section.copyright{
     margin-left: 8em !important;
+  }
+
+  /* about us page */
+
+  header.about-us{
+    height: 90vh !important;
+  }
+
+  header.about-us h1{
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  #about-us{
+    margin-left: 1em !important;
+  }
+
+  #about-us p{
+    width: 100% !important;
+    margin-top: -.75em !important;
+  }
+
+  .agen-content-cards{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em !important;
+  }
+
+  .right-cards{
+    margin-left: 0 !important;
+  }
+
+  .card-body{
+    margin-top: .25em !important;
+    margin-left: -1em;
+  }
+
+  .card-title{
+    font-size: 20px;
+  }
+  
+  .card-text {
+    font-size: 15px;
+  }
+
+  .sosmed img{
+    width: 20px;
   }
 }

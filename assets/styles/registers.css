@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap');
+
+body {
+    background-color: #fff;
+    font-family: 'Mulish', sans-serif;
+    overflow-x: hidden;
+    color: #000000;
+}
+
+.logo{
+    margin-top: 3em;
+}
+
+.register-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.register-form {
+    margin-left: 3em !important;
+}
+
+.title h2{
+    margin-top: 2em;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+
+.form-group label, .form-group input{
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+}
+
+.form-group input{
+    border-radius: 8px;
+    width: 87%;
+    border: 1px solid #CBCED2;
+    height: 48px;
+    font-weight: 400;
+}
+
+.register-ilus{
+    background: #FFFCF7;
+    margin-left: -2em !important;
+}
+
+.register-ilus img{
+    margin-left: 4em;
+    margin-top: 15em;
+    width: 80%;
+}
+
+.fa{
+    color: #777C82;
+    width: 18px;
+    height: 20px;
+}
+
+.eye{
+    margin-top: -2.25em;
+    float: right !important;
+    margin-right: 6em !important;
+}
+
+#hide{
+    display: none;
+}
+
+small{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn{
+    width: 87%;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn-login{
+    background-color: #FF9737;
+    color: #ffffff;
+}  
+
+.btn-login:hover{
+    background-color: #F09139;
+    color: #fff;
+}
+
+.or{
+    display: flex;
+    flex-direction: row;
+    margin-left: -2.5em !important;
+}
+
+
+hr{
+    width: 238.5px;
+    margin-top: 1.75em;
+}
+
+hr.right{
+    float: right;
+}
+
+.or p{
+    font-weight: 700;
+    font-size: 16px;
+    color: #777777;
+    margin-left: -30px !important;
+}
+
+.btn-google{
+    border: 1px solid #CBCED2;
+    color: #333333;
+}
+
+.btn-google img{
+    width: 20px;
+    margin-top: -1px;
+    margin-right: 5px;
+}
+
+.akun{
+    margin-left: 10em !important;
+}
+
+.akun p{
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+}
