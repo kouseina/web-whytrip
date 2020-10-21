@@ -217,13 +217,13 @@ color: #333333;
     }
 
     .form-control{
-        width: 21.5em !important;
+        width: 60vh !important;
     }
 
     
     .btn-image img{
-        float: right;
-        margin-right: -1.75em !important;
+        margin-top: 5px;
+        margin-right: 10% !important;
         width: 15px !important;
     }
 

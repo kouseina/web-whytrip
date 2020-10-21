@@ -47,9 +47,9 @@ body {
 }
 
 .register-ilus img{
-    margin-left: 4em;
-    margin-top: 15em;
-    width: 80%;
+    margin-left: 10em;
+    margin-top: 11em;
+    width: 50%;
 }
 
 .fa{
@@ -68,9 +68,31 @@ body {
     display: none;
 }
 
-small{
+.help{
+    display: flex;
+    flex-direction: row;
+}
+
+small, .sandi{
     font-weight: 600;
     font-size: 14px;
+}
+
+.sandi{
+    float: right;
+    margin-right: -6.5em;
+}
+
+.input-group{
+    margin-left: -.5em !important;
+}
+
+.input-group-text{
+    margin-top: -.5em !important;
+    border: none !important;
+    font-size: 14px;
+    font-weight: 600;
+    color: #777777;
 }
 
 .btn{
@@ -93,24 +115,23 @@ small{
 .or{
     display: flex;
     flex-direction: row;
-    margin-left: -2.5em !important;
+    justify-content: space-between;
+    margin-left: -5em !important;
 }
 
 
 hr{
-    width: 238.5px;
+    width: 230px;
     margin-top: 1.75em;
 }
 
-hr.right{
-    float: right;
-}
 
 .or p{
     font-weight: 700;
     font-size: 16px;
     color: #777777;
-    margin-left: -30px !important;
+    margin-left: -70px !important;
+    margin-right: -70px;
 }
 
 .btn-google{
@@ -125,11 +146,48 @@ hr.right{
 }
 
 .akun{
-    margin-left: 10em !important;
+    margin-left: -5em !important;
 }
 
 .akun p{
     font-weight: 700;
     font-size: 16px;
     color: #333333;
+}
+
+@media only screen and (max-width: 768px){
+    body{
+      overflow-x: hidden;
+    }
+    
+    .title h2{
+        font-size: 24px;
+    }
+
+    
+    .sandi{
+        margin-right: -4em;
+    }
+
+    .eye{
+        margin-right: 4em !important;
+    }
+
+    .register-ilus{
+        display: none;
+    }
+
+    .or{
+        margin-left: -3em !important;
+    }
+
+    
+    hr{
+        width: 110px;
+    }
+
+    .or p{
+        margin-left: -10px !important;
+        margin-right: -10px !important;
+    }
 }

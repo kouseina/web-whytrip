@@ -474,14 +474,14 @@ color: #333333;
 
   .btn-cari{
     /* width: 21.5em !important; */
-    width: 60vh;
+    width: 70vh;
     margin-left: -1.75em !important;
     margin-right: -5em !important;
     height: 58px !important;
   }
 
   .btn-detail{
-    width: 21.5em !important;
+    width: 68vh;
     margin-left: -5.5em !important;
     margin-right: -5em !important;
     height: 58px !important;
