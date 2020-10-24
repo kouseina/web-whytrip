@@ -4,6 +4,10 @@ body {
     color: #666666;
 }
 
+a, a:hover{
+    text-decoration: none !important;
+}
+
 nav ul li a{
     color: #333333;
     font-size: 16px;
@@ -138,11 +142,34 @@ transition: 0.4s ease; */
     font-weight: 600;
 }
 
+li.page-item {
+    padding: .5em !important;
+    border-radius: 20px !important;
+}
+
 li.page-item a{
     width: 56px !important;
     height: 56px !important;
     color: #333333;
     padding-top: 1em !important;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #FF9737;
+    border-color: #FF9737;
+  }
+
+.page-link:focus, .page-link:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #FF9737;
+    border-color: #FF9737;
+}
+
+span.page-link{
+    margin-top: -.5em !important;
 }
 /* footer */
 .section-footer {
@@ -243,6 +270,10 @@ color: #333333;
     .section-footer .row-list{
         margin-top: 2em !important;
         margin-left: 7em !important;
+    }
+
+    li.page-item {
+        padding: 1.25em !important;
     }
 
     ul.sosmed{
