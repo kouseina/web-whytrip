@@ -123,10 +123,15 @@ header p {
   
 }
 
+.brand{
+  margin-top: 13em !important;
+}
+
 .brand-image{
   margin-top: 2em !important;
   display: flex;
   flex-direction: row;
+  margin-left: -4em !important;
 }
 
 .section-stats {
@@ -144,14 +149,6 @@ header p {
   background-color: #FF9737;
   color: #ffffff;
   height: 60px;
-}
-
-.brand{
-  margin-top: 13em !important;
-}
-
-.brand-image{
-  margin-left: -4em !important;
 }
 
 .owl-nav{
@@ -454,13 +451,12 @@ color: #333333;
   }
 
   .section-stats {
-    margin-top: -17em !important;
+    margin-top: -20em !important;
     margin-left: 0 !important;
     height: 150px !important;
   }
 
   .dropdown-toggle{
-    margin-top: 0.5 !important;
     margin-bottom: 1em !important;
     height: 58px !important;
     border: none !important;
@@ -469,7 +465,7 @@ color: #333333;
 
   .btn-cari{
     /* width: 21.5em !important; */
-    width: 70vh;
+    width: 83vh;
     margin-left: -1.75em !important;
     margin-right: -5em !important;
     height: 58px !important;
@@ -483,13 +479,12 @@ color: #333333;
   }
 
   .brand{
-    margin-top: 8em !important;
+    margin-top: 12em !important;
   }
 
   .brand h2{
     text-align: center;
     margin-top: 11em !important;
-    margin-left: -12em;
     font-weight: 600;
     font-size: 16px;
   }
@@ -517,7 +512,7 @@ color: #333333;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: .5em !important;
+    margin-left: 5em !important;
   }
   .item-brands{
     margin-top: -1.5em;

@@ -171,6 +171,14 @@ li.page-item a{
 span.page-link{
     margin-top: -.5em !important;
 }
+
+/*Not foud*/
+.notfound p{
+    color: #666666;
+    font-weight: 700;
+    font-size: 40px;
+}
+
 /* footer */
 .section-footer {
 margin-top: -3em !important;
