@@ -18,7 +18,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <div class="container"> 
+    <div class="container">
         <nav class="row navbar navbar-expand-lg navbar-light">
             <a href="index.html" class="navbar-brand mr-auto">
                 <img src="assets/img/Logo.png" alt="Whytrip">
@@ -38,21 +38,22 @@
                     <a href="index.html" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item mx-md-2">
-                    <a href="#" class="nav-link">Location</a>
+                    <a href="list-daerah.html" class="nav-link">Location</a>
                 </li>
                 <li class="nav-item mx-md-2">
-                    <a href="#" class="nav-link">Tentang</a>
+                    <a href="about.html" class="nav-link">Tentang</a>
                 </li>
             </ul>
 
             <!--Mobile Button-->
 
             <form class="form-inline d-sm-block d-md-none">
-                <button class="btn btn-register my-2 my-sm-0 px-4">
-                    Register
-                </button>
+              <a href="register.html"><button class="btn btn-register my-2 my-sm-0 px-4">
+                Register
+            </button></a>
+                
                 <button class="btn btn-login my-2 my-sm-0 px-4">
-                  Login
+                  <a href="login.html">Login</a>
               </button>
             </form>
         </div>
@@ -61,10 +62,10 @@
 
         <form class="form-inline my-2 my-lg-0 d-none d-md-block">
             <button class="btn btn-register my-2 my-sm-0 px-4 mr-3">
-                Register
+                <a href="register.html">Register</a>
             </button>
             <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
-                Login
+                <a href="login.html">Login</a>
             </button>
         </form> 
 
@@ -72,7 +73,7 @@
     </div>
 
     <!-- Header -->
-    <header class="text-center">
+    <header class="text-center index">
         <h1 class="mt-4">
             Cari Tempat Wisata 
             <br>
@@ -94,7 +95,7 @@
             <section class="section-stats row 
             justify-content-center col-md-7 ml-5 mb-5" id="stats">
                 <div class="input-group">
-                  <select class="dropdown-toggle jenis-wisata col-sm col-md-4" id="inputGroupSelect04" aria-label="Example select with button addon">
+                  <select class="dropdown-toggle jenis-wisata col-sm col-md-4 mt-2" id="inputGroupSelect04" aria-label="Example select with button addon">
                     <option selected>Jenis Wisata</option>
                     <option value="Wisata Alam">Wisata Alam</option>
                     <option value="Wisata Pantai">Wisata Pantai</option>
@@ -220,7 +221,7 @@
                 </div>
             </div>
             <div class="input-group-append col-md-12 my-4 justify-content-center">
-                <a href="popular.html">
+                <a href="list-popular.html">
                     <button class="btn btn-detail" type="button">Lihat Semua</button>
                 </a>
               </div>
